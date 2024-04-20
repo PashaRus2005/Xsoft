@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Xsoft</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylecart.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Услуги</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/about">О нас</a></li>
+                    <li><a href="/services">Услуги</a></li>
+                    <li><a href="/contact">Контакты</a></li>
+                    <li><a href="/login">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <p>Мы предлагаем широкий спектр услуг, включая веб-разработку, мобильные приложения, искусственный интеллект и интернет вещей.</p>
+            <p>Наши услуги нацелены на помощь вашему бизнесу в достижении своих целей и росте.</p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='ImagesIndex/web-development.jpg') }}" alt="Web Development">
+                    <h3>Веб-разработка</h3>
+                    <p>Разработка современных и функциональных веб-сайтов и веб-приложений.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='ImagesIndex/mobile-apps.jpg') }}" alt="Mobile Apps">
+                    <h3>Мобильные приложения</h3>
+                    <p>Создание мобильных приложений для iOS и Android с использованием новейших технологий.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='ImagesIndex/ai.jpeg') }}" alt="Artificial Intelligence">
+                    <h3>Искусственный интеллект</h3>
+                    <p>Разработка решений на основе машинного обучения и искусственного интеллекта для оптимизации бизнес-процессов.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='ImagesIndex/iot.jpg') }}" alt="Internet of Things">
+                    <h3>Интернет вещей</h3>
+                    <p>Создание умных устройств и систем связи для управления объектами и сбора данных.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Xsoft. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

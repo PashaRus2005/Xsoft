@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Xsoft</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Добро пожаловать в Xsoft</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/about">О нас</a></li>
+                    <li><a href="/services">Услуги</a></li>
+                    <li><a href="/contact">Контакты</a></li>
+                    {% if username %}
+                    <li><a href="/logout">Выйти ({{ username }})</a></li>
+                    {% else %}
+                    <li><a href="/login">Войти</a></li>
+                    {% endif %}
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+    <section class="hero">
+        <div class="container">
+            <h2>Мы создаем качественное программное обеспечение для вашего бизнеса</h2>
+            <p>Специализируемся на веб-разработке, мобильных приложениях, искусственном интеллекте и интернете вещей.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Xsoft. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='animation.js') }}"></script>
+</body>
+</html>
+
+
+
+
